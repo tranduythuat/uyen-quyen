@@ -1,0 +1,32 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+
+.love-story {
+    width: 100%;
+    .content {
+        width: 100%;
+        padding: 15% 6%;
+        .title {
+            font-size: 27px;
+            font-family: $font-lora;
+            text-transform: uppercase;
+            font-weight: 300;
+            margin-bottom: 6%;
+        }
+
+        .story {
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 525px) {
+            .title {
+                font-size: calc((27 / 525) * 100vw);
+            }   
+
+            .story {
+                letter-spacing: calc((1 / 525) * 100vw);
+            }
+        }
+    }
+}

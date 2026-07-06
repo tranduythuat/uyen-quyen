@@ -1,0 +1,46 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.gallery {
+    width: 100%;
+    .content {
+        aspect-ratio: 500 / 500;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background: url('../../assets/images/line.png') no-repeat 50% 76% / 120%;
+
+        .main {
+            aspect-ratio: 191 / 307;
+            width: 100%;
+            max-width: 191px;
+            position: absolute;
+            // background-color: $bg-color;
+            &.image1 {
+                top: 25%;
+                right: 50%;
+                background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/uyen-quyen/IMG_5974.webp') no-repeat 38% 55% / 130%;
+                box-shadow: -12px 4px $text-color;
+            }
+
+            &.image2 {
+                top: 18%;
+                left: 50%;
+                background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/uyen-quyen/IMG_5983.webp') no-repeat 29% 50% / cover;
+                box-shadow: 12px -4px $text-color;
+            }
+        }
+
+        @media (max-width: 525px) {
+            .main {
+                max-width: calc((191 / 525) * 100vw);
+                &.image1 {
+                    box-shadow: calc(-12 / 525 * 100vw) calc(4 / 525 * 100vw) $text-color;
+                }
+                &.image2 {
+                    box-shadow: calc(12 / 525 * 100vw) calc(-4 / 525 * 100vw) $text-color;
+                }
+            }
+        }
+    }
+}

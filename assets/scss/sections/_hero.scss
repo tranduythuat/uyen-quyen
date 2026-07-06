@@ -1,0 +1,79 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.hero {
+    width: 100%;
+    .content {
+        aspect-ratio: 525 / 860;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+
+        .hero-text {
+            @include flex-center;
+            margin: auto;
+            width: 100%;
+            .title {
+                font-size: 18px;
+                font-family: $font-ClassiqueSaigon;
+                margin: 0 10%;
+
+            }
+            .dot {
+                font-size: 8px;
+            }
+        }
+        .hero-images {
+            width: 100%;
+            aspect-ratio: 525 / 800;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.204), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/uyen-quyen/IMG_5977.webp') no-repeat 33% 60%/ 170%;
+            color: $secondary-color;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+
+            .save-the {
+                font-family: $font-lora;
+                font-size: 36px;
+                width: 100%;
+                span {
+                    font-family: $font-1FTVVIPAmsterdamSignature;
+                    font-size: 37px;
+                    margin: 0 5%;
+                }
+            }
+            .date {
+                font-family: $font-SVG-gotham-book;
+                font-size: 17px;
+                color: $secondary-color;    
+                margin-bottom: 5%;
+                letter-spacing: 1.8px;
+            }
+        }
+
+        @media (max-width: 525px) {
+            .hero-text {
+                .title {
+                    font-size: calc((18 / 525) * 100vw);
+                }
+                .dot {
+                    font-size: calc((8 / 525) * 100vw);
+                }
+            }
+            .hero-images {
+                .save-the {
+                    font-size: calc((36 / 525) * 100vw);
+                    span {
+                        font-size: calc((37 / 525) * 100vw);
+                    }
+                }
+                .date {
+                    font-size: calc((17 / 525) * 100vw);
+                }
+            }
+        }
+    }
+}

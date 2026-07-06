@@ -1,0 +1,126 @@
+/* ===== Language select popup ===== */
+.lang-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(35, 31, 32, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+.lang-overlay.is-visible {
+  display: flex;
+}
+
+.lang-popup {
+  width: 100%;
+  max-width: 380px;
+  background: #f8f3eb;
+  border-radius: 14px;
+  padding: 32px 28px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.281);
+  animation: lang-pop-in 0.25s ease-out;
+}
+
+@keyframes lang-pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.lang-popup-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #231f20;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.lang-popup-subtitle {
+  font-size: 13px;
+  color: #6d6a68;
+  margin-bottom: 22px;
+  line-height: 1.5;
+}
+
+.lang-popup-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.lang-btn {
+  flex: 1 1 130px;
+  padding: 12px 16px;
+  border: 1.5px solid #231f20;
+  background: transparent;
+  color: #231f20;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.lang-btn:hover,
+.lang-btn:focus-visible {
+  background: #231f20;
+  color: #f8f3eb;
+}
+
+.lang-btn:active {
+  transform: scale(0.97);
+}
+
+/* ===== Floating language switcher ===== */
+.lang-switcher {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 999;
+  min-width: 46px;
+  height: 46px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1.5px solid #231f20;
+  background: #f8f3eb;
+  color: #231f20;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  transition: transform 0.15s ease, background 0.2s ease, color 0.2s ease;
+  font-family: "SVG-gotham-book", sans-serif;
+}
+
+.lang-switcher:hover {
+  background: #231f20;
+  color: #f8f3eb;
+}
+
+.lang-switcher:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 480px) {
+  .lang-popup {
+    padding: 26px 20px;
+  }
+
+  .lang-switcher {
+    right: 12px;
+    bottom: 12px;
+  }
+}

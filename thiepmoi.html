@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uyên & Quyền</title>
+    <meta property="og:title" content="Mỹ Uyên & Tử Quyền" />
+    <meta property="og:description" content="15.08.2026" />
+    <meta property="og:type" content="website" />
+
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="400" />
+
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <link rel="stylesheet" href="assets/css/lang.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Language select popup - shown on first visit -->
+    <div id="langOverlay" class="lang-overlay">
+      <div class="lang-popup">
+        <div class="lang-popup-title">Chọn ngôn ngữ <br>/选择语言/</div>
+        <!-- <div class="lang-popup-subtitle">
+          Vui lòng chọn ngôn ngữ hiển thị / Please choose your preferred language
+        </div> -->
+        <div class="lang-popup-buttons">
+          <button type="button" class="lang-btn" data-lang="vi">Tiếng Việt</button>
+          <button type="button" class="lang-btn" data-lang="zh">简体中文</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Small switcher to change language any time -->
+    <button type="button" id="langSwitcher" class="lang-switcher" aria-label="Switch language"></button>
+
+    <div class="container">
+      <section class="hero">
+        <div class="content">
+          <div class="hero-text" data-animate="fade-in">
+            <div class="dot"><i class="fa-solid fa-circle"></i></div>
+            <div class="title" data-animate="fade-in">WELCOME TO OUR WEDDING</div>
+            <div class="dot"><i class="fa-solid fa-circle"></i></div>
+          </div>
+          <div class="hero-images" data-animate="fade-in">
+            <div class="save-the" data-animate="fade-left">SAVE <span>the</span> DATE</div>
+            <div class="date" data-animate="fade-right">15.08.2026</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="invitation">
+        <div class="content">
+          <div class="section-header" data-animate="fade-in">
+            We do.
+          </div>
+  
+          <div class="message">
+            <p class="text" data-animate="fade-in" data-i18n="invitation.message">
+              TRÂN TRỌNG KÍNH MỜI <span>ANH/CHỊ/BẠN</span><br />
+              ĐẾN DỰ BỮA CƠM THÂN MẬT MỪNG LỄ THÀNH HÔN CỦA
+            </p>
+  
+            <div class="couple-name" data-animate="fade-in">
+              <span class="groom-name" data-i18n="invitation.groom_name">Mỹ Uyên</span>
+              <span class="separator">&amp;</span>
+              <span class="bride-name" data-i18n="invitation.bride_name">Tử Quyền</span>
+            </div>
+          </div>
+  
+          <div class="divider-icon">
+            <img src="assets/images/divider.png" alt="Bow Icon" data-animate="flip-vertical-left" />
+          </div>
+  
+          <div class="event-time">
+            <p class="time-label" data-animate="fade-in" data-i18n="invitation.timeLabel">VÀO LÚC <strong>17H30</strong></p>
+  
+            <div class="event-date" data-animate="fade-right">
+              <span class="weekday" data-i18n="invitation.weekday">THỨ BẢY</span>
+              <span class="date-divider">|</span>
+              <span class="date">15.08.2026</span>
+            </div>
+            <div class="lunar-date" data-i18n="invitation.lunar_date">(nhằm ngày 3 tháng 7 âm lịch)</div>
+          </div>
+  
+          <div class="event-location" data-animate="fade-left">
+            <div class="venue-name">JW Marriott Hotel & Suites Saigon</div>
+  
+            <p class="venue-address" data-animate="fade-in" data-i18n="invitation.venueAddress">
+              Grand Ballroom, Tầng 2, 39 Lê Duẩn, Phường Sài Gòn, Thành phố Hồ Chí Minh
+            </p>
+          </div>
+  
+          <div class="location-map">
+            <img src="assets/images/map.png" alt="Wedding Location Map" data-animate="flip-vertical-left" />
+          </div>
+  
+          <a href="https://maps.app.goo.gl/3jH89umL329hRRcD6" class="map-button" data-animate="fade-in" data-i18n="invitation.mapButton"> CLICK ĐỂ XEM BẢN ĐỒ </a>
+        </div>
+      </section>
+
+      <div class="gallery">
+        <div class="content" data-animate="fade-in">
+          <div class="image1 main" data-animate="fade-right"></div>
+          <div class="image2 main" data-animate="fade-left"></div>
+        </div>
+      </div>
+
+      <!-- timeline -->
+      <section class="timeline">
+        <div class="content" data-animate="fade-in">
+          <div class="title">Timeline</div>
+          <div class="items">
+            <div class="item timeline-item">
+              <div class="time">
+                <span> 18:00</span>
+              </div>
+              <div class="icon">
+                <img
+                  class="icon-animate"
+                  src="assets/images/icons/cake.png"
+                  alt=""
+                />
+              </div>
+              <div class="label" data-i18n="timeline.item1">Đón khách</div>
+            </div>
+            <div class="item timeline-item">
+              <div class="time">
+                <span> 19:00</span>
+              </div>
+              <div class="icon">
+                <img
+                  class="icon-animate"
+                  src="assets/images/icons/rings.png"
+                  alt=""
+                />
+              </div>
+              <div class="label" data-i18n="timeline.item2">
+                Làm lễ
+              </div>
+            </div>
+            <div class="item timeline-item">
+              <div class="time">
+                <span>19:30</span>
+              </div>
+              <div class="icon">
+                <img
+                  class="icon-animate"
+                  src="assets/images/icons/dinner.png"
+                  alt=""
+                />
+              </div>
+              <div class="label" data-i18n="timeline.item3">
+                 Khai tiệc
+              </div>
+            </div>
+            <div class="item timeline-item">
+              <div class="time">
+                <span>20:00</span>
+              </div>
+              <div class="icon">
+                <img
+                  class="icon-animate"
+                  src="assets/images/icons/party.png"
+                  alt=""
+                />
+              </div>
+              <div class="label" data-i18n="timeline.item4">
+                Âm nhạc 
+              </div>
+            </div>
+            <div class="item timeline-item">
+              <div class="time">
+                <span>21:00</span>
+              </div>
+              <div class="icon">
+                <img
+                  class="icon-animate"
+                  src="assets/images/icons/flower.png"
+                  alt=""
+                />
+              </div>
+              <div class="label" data-i18n="timeline.item5">Tung hoa</div>
+            </div>
+          </div>
+          <div class="subtext" data-animate="fade-in" data-i18n="timeline.subtext">
+            <span>Lưu ý:</span> Khách iu vui lòng đến <span>đúng giờ</span> để đảm bảo chương trình <br>
+            và ánh sáng đẹp nhất cho Lễ Cưới
+          </div>
+
+          <!-- <div class="dresscode">
+            <div class="title" data-animate="fade-in">Dresscode</div>
+            <div class="subtext" data-i18n="timeline.dresscodeSubtext">
+              BUỔI TIỆC SẼ TUYỆT VỜI HƠN KHI KHÁCH MỜI <br>
+              CÓ THỂ MANG TRANG PHỤC VỚI NHỮNG TONE MÀU DƯỚI ĐÂY:
+            </div>
+            <div class="palette">
+              <div
+                class="swatch swatch1"
+                style="background-color: #000000"
+              ></div>
+              <div
+                class="swatch swatch2"
+                style="background-color: #e0bd92"
+              ></div>
+              <div
+                class="swatch swatch3"
+                style="background-color: #6d1524"
+              ></div>
+              <div
+                class="swatch swatch4"
+                style="background-color: #6e7035"
+              ></div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <section class="love-story">
+        <div class="content" data-animate="fade-in">
+          <h2 class="title">Love story</h2>
+          <div class="story">
+            In a story that probably shouldn't have worked, a boy from Vietnam met a girl from the US in the most unexpected place. Different countries, different time zones, and every reason to believe it would never last. But between late night calls, long flights, and countless reunions, they built something rooted in love, laughter, and unwavering support. What began as long distance became a lifetime of choosing each other, again and again. And today is just the beginning of their greatest adventure yet.
+          </div>
+        </div>
+      </section>
+<!-- 
+      <section class="album">
+        <div class="content" data-animate="fade-in">
+          <div class="divider">
+            <img src="assets/images/divider.png" alt="" data-animate="flip-vertical-left" />
+          </div>
+          <h2 class="titile" data-animate="fade-in">Album photo</h2>
+          <div class="subtext" data-animate="fade-in" data-i18n="album.subtext">CÙNG XEM BST CỦA CHÚNG MÌNH NHÉ!</div>
+          <div class="swiper main-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section class="pictures">
+      <div class="content">
+        <img src="assets/images/flower_pic_01.png" class="flower_left flower" data-animate="fade-in-yoyo" alt="">
+        <img src="assets/images/flower_pic_01.png" class="flower_right flower" data-animate="fade-in-yoyo" alt="">
+        <div class="picture01 picture" data-animate="roll-in-right">
+        </div>
+        <div class="picture02 picture" data-animate="roll-in-left"></div>
+        <div class="picture03 picture" data-animate="roll-in-right"></div>
+        <div class="picture05 picture" data-animate="roll-in-left"></div>
+        <div class="picture04 picture" data-animate="roll-in-right"></div>
+        <img src="assets/images/flower_pic04.png" class="flower_pic04" data-animate="fade-in-yoyo" alt="">
+      </div>
+    </section> -->
+
+      <section class="rsvp">
+        <div class="content" data-animate="fade-in">
+          <form id="rsvpForm" class="rsvp-form">
+            <div class="header">
+              <div class="title" data-animate="fade-in">
+                RSVP 
+              </div>
+              <p class="subtitle" data-animate="fade-in-end" data-i18n="rsvp.subtitle">
+               HÃY GIÀNH CHÚT THỜI GIAN XÁC NHẬN THAM DỰ GIÚP <br>
+THÀNH UYÊN VÀ QUYỀN NHÉ!
+              </p>
+            </div>
+
+            <div class="form-group fade-in" data-animate="fade-in-end">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Tên của bạn"
+                data-i18n-placeholder="rsvp.namePlaceholder"
+                required
+              />
+            </div>
+
+            <div class="form-group fade-in" data-animate="fade-in-end">
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="Số điện thoại"
+                data-i18n-placeholder="rsvp.phonePlaceholder"
+                required
+              />
+            </div>
+
+            <div class="form-group confirm-related">
+              <p class="subtitle" data-animate="fade-in" data-i18n="rsvp.confirmRelatedSubtitle">
+                BẠN LÀ BẠN BÈ, ĐỒNG NGHIỆP HAY NGƯỜI THÂN CỦA...?
+              </p>
+              <div class="button-group" data-animate="fade-in-end">
+                <div class="radio-wrapper">
+                  <input
+                    type="radio"
+                    id="confirm-uyen"
+                    name="confirm_related"
+                    value="Uyên"
+                    checked
+                  />
+                  <label for="confirm-uyen" class="radio-label" data-i18n="rsvp.uyen">
+                    Uyên
+                  </label>
+                </div>
+                <div class="radio-wrapper">
+                  <input
+                    type="radio"
+                    id="confirm-quyen"
+                    name="confirm_related"
+                    value="Quyền"
+                  />
+                  <label for="confirm-quyen" class="radio-label" data-i18n="rsvp.quyen">
+                    Quyền
+                  </label>
+                </div>
+                <div class="radio-wrapper">
+                  <input
+                    type="radio"
+                    id="confirm-both"
+                    name="confirm_related"
+                    value="Cả hai"
+                  />
+                  <label for="confirm-both" class="radio-label" data-i18n="rsvp.both">
+                    Cả hai
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group confirm">
+              <p class="subtitle" data-animate="fade-in" data-i18n="rsvp.confirmSubtitle">
+               BẠN SẼ ĐẾN THAM GIA TIỆC CƯỚI ĐỈNH NÓC, KỊCH TRẦN, <br>
+               BAY PHẤP PHỚI CỦA CHÚNG MÌNH CHỨ?
+              </p>
+              <div class="button-group" data-animate="fade-in-end">
+                <div class="radio-wrapper">
+                  <input
+                    type="radio"
+                    id="confirm-yes"
+                    name="confirm"
+                    value="Yes"
+                    checked
+                  />
+                  <label for="confirm-yes" class="radio-label" data-i18n="rsvp.yes">
+                    Chắc chắn rùi !!!
+                  </label>
+                </div>
+                <div class="radio-wrapper">
+                  <input
+                    type="radio"
+                    id="confirm-no"
+                    name="confirm"
+                    value="No"
+                  />
+                  <label for="confirm-no" class="radio-label" data-i18n="rsvp.no">
+                    Rất tiếc hong tham gia được :(
+                  </label>
+                </div>
+              </div>
+            </div>
+
+           
+
+            <!-- <div class="form-group guest-number" data-animate="fade-in-end">
+              <div class="label">
+                Số khách mời tham dự <br />
+                <i>/How many people are you bringing?/</i>
+              </div>
+              <input
+                type="text"
+                id="attendance"
+                name="guest_number"
+                placeholder=""
+              />
+            </div> -->
+
+            <!-- <div class="form-group" data-animate="fade-in-end">
+              <textarea
+                id="guest-names"
+                name="guests_names"
+                placeholder="TÊN KHÁCH MỜI ĐI CÙNG BẠN - WHAT ARE YOUR GUESTS NAMES?"
+              ></textarea>
+            </div> -->
+
+            <div class="form-group guests-number">
+              <p class="subtitle" data-animate="fade-in" data-i18n="rsvp.guestsSubtitle">
+                BẠN CÓ “TỆP ĐÍNH KÈM” CÙNG TỚI TIỆC CƯỚI KHÔNG? <br />
+              </p>
+              <div class="button-group first" data-animate="fade-in">
+                <div class="radio-wrapper">
+                  <input
+                    type="radio"
+                    id="alone"
+                    name="guests_number"
+                    value="Đi một mình"
+                    checked
+                  />
+                  <label for="alone" class="radio-label" data-i18n="rsvp.alone">
+                    Chỉ có tôi và sự cô đơn
+                  </label>
+                </div>
+              </div>
+              <div class="button-group second" data-animate="fade-in">
+                <div class="radio-wrapper">
+                  <input
+                    type="radio"
+                    id="one"
+                    name="guests_number"
+                    value="+1"
+                    checked
+                  />
+                  <label for="one" class="radio-label">
+                    +1
+                  </label>
+                </div>
+                <div class="radio-wrapper">
+                  <input
+                    type="radio"
+                    id="two"
+                    name="guests_number"
+                    value="+2"
+                  />
+                  <label for="two" class="radio-label"> 
+                    +2   
+                  </label>
+                </div>
+                <div class="radio-wrapper">
+                  <input
+                    type="radio"
+                    id="child"
+                    name="guests_number"
+                    value="Đi cùng trẻ nhỏ"
+                  />
+                  <label for="child" class="radio-label" data-i18n="rsvp.child"> 
+                    Tôi đi cùng trẻ nhỏ
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group related">
+              <p class="subtitle" data-animate="fade-in" data-i18n="rsvp.related_subtitle">
+                BẠN CÓ LƯU Ý GÌ ĐẶC BIỆT VỀ THỨC ĂN KHÔNG?
+              </p>
+              <div class="button-group" data-animate="fade-in">
+                <div class="radio-wrapper">
+                  <input type="radio" id="normal" name="related" value="Bình thường" checked/>
+                  <label for="normal" class="radio-label" data-i18n="rsvp.normal">
+                    Tôi bình thường
+                  </label>
+                </div>
+                <div class="radio-wrapper">
+                  <input
+                    type="radio"
+                    id="vegetarian"
+                    name="related"
+                    value="Ăn chay"
+                  />
+                  <label for="vegetarian" class="radio-label" data-i18n="rsvp.vegetarian">
+                    Tôi ăn chay
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="form-group" data-animate="fade-in-end">
+              <textarea
+                id="note"
+                name="note"
+                placeholder="Please specify - Vui lòng ghi rõ"
+              ></textarea>
+            </div> -->
+
+            <div class="form-group" data-animate="fade-in-end">
+              <p class="subtitle" data-animate="fade-in" data-i18n="rsvp.messageSubtitle">
+                GỬI MỘT VÀI LỜI IU THƯƠNG DÀNH CHO CHÚNG MÌNH NHA ^^ 
+              </p>
+              <textarea
+                id="message"
+                name="wish"
+                placeholder="Viết lời chúc..."
+                data-i18n-placeholder="rsvp.messagePlaceholder"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" data-i18n="rsvp.submit">Xác nhận</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- <section class="qrcode">
+        <div class="content">
+          <div class="label" data-animate="fade-in">
+            Hộp mừng cưới <br />
+            /<i>Gift Registry</i>/
+          </div>
+          <div class="title" data-animate="fade-in">
+            Gửi lời chúc đến cặp đôi <br />
+            <i>/Send your wishes to the couple!/</i>
+          </div>
+          <div class="subtitle" data-animate="fade-in">
+            Nếu không thể cùng chung vui trực tiếp, <br />
+            quý khách có thể gửi lời chúc đến cô dâu và chú rể qua mã QR bên
+            dưới. <br />
+            <i>
+              /If you can't attend the wedding in person, <br />
+              you can send your wishes to the bride and groom through the QR
+              code below./
+            </i>
+          </div>
+          <div class="qr-code first" data-animate="fade-in">
+            <div class="name">Chú rể · Trọng Hiền</div>
+            <img
+              src="assets/images/qrcode1.jpg"
+              alt="QR Code for Gift Registry"
+            />
+            <div class="label1">Lý Trọng Hiền</div>
+            <div class="label2">Shinhan Bank · 039-960-5796</div>
+          </div>
+          <div class="qr-code" data-animate="fade-in">
+            <div class="name">Cô dâu · Tú Anh</div>
+            <img
+              src="assets/images/qrcode2.jpg"
+              alt="QR Code for Gift Registry"
+            />
+            <div class="label1">Lê Ngô Tú Anh</div>
+            <div class="label2">Chase Zelle · anniele.contact@gmail.com</div>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="end">
+        <div class="content">
+          <div class="divider">
+            <img
+              src="assets/images/divider.png"
+              alt=""
+              data-animate="fade-in-end"
+            />
+          </div>
+          <div class="text" data-animate="fade-in-end">
+              from bal - 8 to life - mae
+          </div>
+        </div>
+      </section>
+
+      <section class="yenstudio">
+        <div class="content">
+          <div class="couple-img">
+            <img src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/uyen-quyen/IMG_5980.webp" alt="" data-animate="fade-in-end" />
+          </div>
+          <div class="text-main" data-i18n="yenstudio.textMain">HẸN GẶP LẠI BẠN!</div> 
+          <div class="text">YÊN STUDIO | YÊN BỀ GIA THẤT</div>
+        </div>
+      </section>
+
+      <!-- <div class="music-box">
+      <div class="label">
+        <div id="musicLabel" class="musicLabel">Turn the</br> Music on</div>
+      </div>
+      <div class="player" id="player-btn" aria-label="Play/Pause">
+        <img id="iconSvg" src="assets/images/cd.png" alt="Music Icon" />
+      </div>
+    </div>
+    <audio id="audio" preload="auto"
+      src="https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/lanz-yang-ha-my/Married%20Life.mp3" loop
+      type="audio/mpeg"></audio> -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/gsap-animations.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.dresscode {
+    width: 100%;
+    .content {
+        width: 100%;
+        aspect-ratio: 500 / 685;
+        perspective: 1000px;
+        background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/lanz-yang-ha-my/M.jpg') no-repeat center / cover;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        .logo {
+            margin: 10% 0 6%;
+            img {
+                max-width: 150px;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .text-section {
+            max-width: 361px;
+            width: 100%;
+            aspect-ratio: 361 / 186;
+            background: url('../../assets/images/dresscode_text_bg.png') no-repeat center / cover;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            perspective: 1000px;
+            
+            .title {
+                font-size: 70px;
+                color: #fff;
+                margin-bottom: 2%;
+            }
+            .desc {
+                font-size: 16px;
+            }
+        }
+
+    }
+
+    @media (max-width: 500px) {
+        .content {
+            .logo {
+                img {
+                    max-width: calc((150 / 500) * 100vw);
+                }
+            }
+
+            .text-section {
+                max-width: calc((361 / 500) * 100vw);
+                .title {
+                    font-size: calc((70 / 500) * 100vw);
+                }
+                .desc {
+                    font-size: calc((16 / 500) * 100vw);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.invitation {
+    width: 100%;
+    .content {
+        width: 100%;
+        .section-header {
+            font-family: $font-1FTVVIPAmsterdamSignature;
+            font-size: 52px;
+            margin: 10%;
+        }
+
+        .message {
+            .text {
+                font-family: $font-SVG-gotham-book;
+                line-height: 1.5;
+                font-size: 11px;
+                line-height: 2;
+                margin-bottom: 2%;
+                span {
+                    font-weight: bold;
+                }
+            }
+            .couple-name {
+                font-family: $font-lora;
+                font-size: 28px;
+                text-transform: uppercase;
+                letter-spacing: 2.5px;
+            }
+        }
+
+        .divider-icon {
+            margin: 8% 0;
+            img {
+                width: 100%;
+                max-width: 82px;
+                height: auto;
+            }
+        }
+
+        .event-time {
+            width: 100%;
+            margin-bottom: 10%;
+            .time-label {
+                font-family: $font-SVG-gotham-book;
+                font-size: 17px;
+                strong {
+                    font-family: $font-SVG-GothamBold;
+                }
+            }
+            .event-date {
+                font-family: $font-lora;
+                font-size: 37px;
+                letter-spacing: 2.5px;
+                .date-divider {
+                    position: relative;
+                    top: -3px;
+                }
+            }
+            .lunar-date {
+                font-size: 14px;
+            }
+        }
+
+        .event-location {
+            .venue-name {
+                font-family: $font-lora;
+                font-size: 37px;
+                text-transform: uppercase;
+            }
+            .venue-address {
+                font-family: $font-SVG-gotham-book;
+                font-size: 11px;
+            }
+        }
+
+        .location-map {
+            width: 100%;
+            margin: 10% 0;
+            img {
+                max-width: 373px;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .map-button {
+            display: block;
+            font-size: 13px;
+            text-decoration: none;
+            color: #fff;
+            background-color: $text-color;
+            max-width: 329px;
+            width: 100%;
+            aspect-ratio: 329 / 31;
+            @include flex-center;
+            border-radius: 18px;
+            margin: auto;
+            // text-transform: uppercase;
+            transition: all 0.3s ease;
+            font-family: $font-SVG-GothamBold;
+
+            &:hover {
+                // background-color: darken($text-color, 10%);
+            }
+        }
+    
+        @media (max-width: 525px) {
+            .section-header {
+                font-size: calc((52 / 525) * 100vw);
+            }
+            .message {
+                .text {
+                    font-size: calc((11 / 525) * 100vw);
+                }
+                .couple-name {
+                    font-size: calc((28 / 525) * 100vw);
+                }
+            }
+            .divider-icon {
+                img {
+                    max-width: calc((82 / 525) * 100vw);        
+                }
+            }
+            .event-time {
+                .time-label {
+                    font-size: calc((17 / 525) * 100vw);
+                }
+                .event-date {
+                    font-size: calc((37 / 525) * 100vw);
+                }
+                .lunar-date {
+                    font-size: calc((14 / 525) * 100vw);
+                }
+            }
+            .event-location {
+                .venue-name {
+                    font-size: calc((37 / 525) * 100vw);        
+                }
+                .venue-address {
+                    font-size: calc((11 / 525) * 100vw);
+                }
+            }
+            .location-map {
+                img {
+                    max-width: calc((373 / 525) * 100vw);
+                }
+            }
+            .map-button {
+                font-size: calc((13 / 525) * 100vw);
+                max-width: calc((329 / 525) * 100vw);
+                border-radius: calc((18 / 525) * 100vw);
+            }
+        }
+    }
+}

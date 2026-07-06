@@ -1,0 +1,228 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.timeline {
+    width: 100%;
+    .content {
+        width: 100%;
+        padding: 5% 0;
+        .title {
+            font-family: $font-lora;
+            font-size: 27px;
+            font-weight: 300;
+            text-align: center;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+    }
+
+    .items {
+        aspect-ratio: 500 / 450;
+        background: url('../../assets/images/timeline_tree.png') no-repeat 50% 30% / 20%;
+        margin-top: 2%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+        position: relative;
+        .item {
+            font-size: 11px;
+            position: absolute;
+            .icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 20% 0;
+                width: 100%;
+
+                img {
+                    max-width: 42px;
+                    width: 100%;
+                    height: auto
+                }
+            }
+
+            .time {
+                letter-spacing: 1px;
+                @include flex-center;
+                max-width: 75px;
+                width: 100%;
+                font-weight: 600;
+                span {
+                    font-family: $font-DFVNCatchyMager;
+                    padding: 6% 0 1%;
+                    @include flex-center;
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    line-height: 1;
+                    border-radius: 5px;
+                }
+            }
+            .label {
+                @include flex-center;
+                font-family: $font-lora;
+                text-align: left;
+                margin-top: 5%;
+                i {
+                    font-size: 12px;
+                }
+            }
+
+            &:nth-of-type(1) {
+                top: 10%;
+                left: 30%;
+               
+            }
+
+            &:nth-of-type(2) {
+                top: 26%;
+                right: 31%;
+            }
+
+            &:nth-of-type(3) {
+                top: 42%;
+                left: 31%;
+                 .icon img {
+                    max-width: 34px;
+                }
+            }
+
+            &:nth-of-type(4) {
+                top: 58%;
+                right: 31%;
+            }
+
+            &:nth-of-type(5) {
+                top: 75%;
+                left: 46%;
+                .icon img {
+                    max-width: 28px;
+                }
+            }
+        }
+    }
+
+    .subtext {
+        font-family: $font-SVG-gotham-book;
+        font-style: italic;
+        font-size: 11px;
+        margin-top: 2%;
+        span {
+            font-family: $font-SVG-GothamBold;
+        }
+    }
+
+    .dresscode {
+        margin-top: 15%;
+
+        .title {
+            margin-bottom: 2%;
+            text-align: center;
+            margin-right: 0%;
+            font-family: $font-lora;
+            font-size: 27px;
+        }
+        .subtext {
+            font-family: $font-SVG-gotham-book;
+            font-size: 11px;
+            margin-bottom: 5%;
+        }
+
+        .palette {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0;
+
+            .swatch {
+                max-width: 42px;
+                aspect-ratio: 1;
+                width: 100%;
+                border-radius: 50%;
+                border: 1px solid rgba(255, 255, 255, 0.401);
+                margin: 0 -4px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .text-img {
+        margin-top: 16%;
+        perspective: 500px;
+        margin-bottom: 5%;
+
+        img {
+            max-width: 104px;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (max-width: 525px) {
+        .content {
+            .title {
+                font-size: calc((27 / 525) * 100vw);
+            }
+        }
+
+        .items {
+            .item {
+                font-size: calc((11 / 525) * 100vw);
+                .icon {
+                    img {
+                        max-width: calc((42 / 525) * 100vw);
+                    }
+                }
+                .time {
+                    max-width: calc((75 / 525) * 100vw);
+                    span {
+                        border-radius: calc((5 / 525) * 100vw);
+                    }
+                }
+                .label {
+                    i {
+                        font-size: calc((12 / 525) * 100vw);
+                    }
+                }
+                &:nth-of-type(3) {
+                    .icon img {
+                        max-width: calc((34 / 525) * 100vw);
+                    }
+                }
+                &:nth-of-type(5) {
+                    .icon img {
+                        max-width: calc((28 / 525) * 100vw);
+                    }
+                }
+            }
+        }
+
+        .subtext {
+            font-size: calc((11 / 525) * 100vw);
+        }
+
+        .dresscode {
+            .title {
+                font-size: calc((27 / 525) * 100vw);
+            }
+            .subtext {
+                font-size: calc((11 / 525) * 100vw);
+            }
+            .palette {
+                .swatch {
+                    max-width: calc((42 / 525) * 100vw);
+                    margin: 0 calc((-4 / 525) * 100vw);
+                }
+            }
+        }
+    }
+}
