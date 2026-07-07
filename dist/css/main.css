@@ -404,6 +404,7 @@ section {
 }
 .invitation .content .event-time .lunar-date {
   font-size: 14px;
+  font-style: italic;
 }
 .invitation .content .event-location .venue-name {
   font-family: "Lora", sans-serif;

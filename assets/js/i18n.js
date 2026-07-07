@@ -17,9 +17,9 @@
         'TRÂN TRỌNG KÍNH MỜI <span>ANH/CHỊ/BẠN</span><br />ĐẾN DỰ BỮA CƠM THÂN MẬT MỪNG LỄ THÀNH HÔN CỦA',
       "invitation.groom_name": 'Mỹ Uyên',
       "invitation.bride_name": 'Tử Quyền',
-      "invitation.timeLabel": 'VÀO LÚC <strong>17H30</strong>',
+      "invitation.timeLabel": 'VÀO LÚC <strong>18H00</strong>',
       "invitation.weekday": 'THỨ BẢY',
-      "invitation.lunar_date": "(nhằm ngày 3 tháng 7 âm lịch)",
+      "invitation.lunar_date": "(Nhằm ngày 3 tháng 7 năm Bính Ngọ)",
       "invitation.venueAddress":
         'Grand Ballroom, Tầng 2, 39 Lê Duẩn, Phường Sài Gòn, Thành phố Hồ Chí Minh',
       "invitation.mapButton": 'CLICK ĐỂ XEM BẢN ĐỒ',
