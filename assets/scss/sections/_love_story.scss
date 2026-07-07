@@ -6,7 +6,7 @@
     width: 100%;
     .content {
         width: 100%;
-        padding: 15% 6%;
+        padding: 15% 10%;
         .title {
             font-size: 27px;
             font-family: $font-lora;
@@ -17,6 +17,7 @@
 
         .story {
             letter-spacing: 1px;
+            line-height: 1.5;
         }
 
         @media (max-width: 525px) {

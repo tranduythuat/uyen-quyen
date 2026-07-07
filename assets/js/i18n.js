@@ -33,11 +33,11 @@
         '<span>Lưu ý:</span> Khách iu vui lòng đến <span>đúng giờ</span> để đảm bảo chương trình <br>và ánh sáng đẹp nhất cho Lễ Cưới',
       "timeline.dresscodeSubtext":
         'BUỔI TIỆC SẼ TUYỆT VỜI HƠN KHI KHÁCH MỜI <br>CÓ THỂ MANG TRANG PHỤC VỚI NHỮNG TONE MÀU DƯỚI ĐÂY:',
-
+      "love_story.story":"In a story that probably shouldn't have worked, a boy from Vietnam met a girl from the US in the most unexpected place. <br><br>Different countries, different time zones, and every reason to believe it would never last. But between late night calls, long flights, and countless reunions, they built something rooted in love, laughter, and unwavering support.<br><br> What began as long distance became a lifetime of choosing each other, again and again. And today is just the beginning of their greatest adventure yet.",
       "album.subtext": 'CÙNG XEM BST CỦA CHÚNG MÌNH NHÉ!',
 
       "rsvp.subtitle":
-        'HÃY GIÀNH CHÚT THỜI GIAN XÁC NHẬN THAM DỰ GIÚP <br>THÀNH UYÊN VÀ QUYỀN NHÉ!',
+        'HÃY GIÀNH CHÚT THỜI GIAN XÁC NHẬN THAM DỰ GIÚP <br>QUYỀN VÀ UYÊN NHÉ!',
       "rsvp.namePlaceholder": 'Tên của bạn',
       "rsvp.phonePlaceholder": 'Số điện thoại',
       "rsvp.confirmRelatedSubtitle": 'BẠN LÀ BẠN BÈ, ĐỒNG NGHIỆP HAY NGƯỜI THÂN CỦA...?',
@@ -62,7 +62,7 @@
       "invitation.message": '謹訂於茲，敬告諸位親友我們愛子愛女之結婚典禮',
       "invitation.groom_name": '阮春美媛',
       "invitation.bride_name": '李子權',
-      "invitation.timeLabel": '时间 <strong>下午17:30</strong>',
+      "invitation.timeLabel": '时间 <strong>下午18:00</strong>',
       "invitation.weekday": '星期六',
       "invitation.lunar_date": "（农历七月初三）",
       "invitation.venueAddress":'蒞臨參加婚宴，與我們共同分享喜悅在: 萬豪酒店, 二樓',
@@ -76,11 +76,11 @@
         '为了确保婚礼流程顺利进行，并获得最佳拍摄光线，请亲爱的来宾准时出席婚礼。',
       "timeline.dresscodeSubtext":
         '如果各位嘉宾能穿上以下色系的服装，<br>婚礼将会更加完美：',
- 
+      "love_story.story":"在一个本不该发生的故事里，来自越南的男孩与来自美国的女孩，在最意想不到的地方相遇。<br><br> 不同的国家，不同的时区，似乎一切都在告诉他们，这段感情不会长久。然而，在无数个深夜通话、漫长的飞行，以及一次又一次的重逢中，他们共同建立了一份扎根于爱、欢笑与坚定陪伴的感情。<br><br> 曾经的异地恋，最终变成了一生一次又一次坚定选择彼此的承诺。<br><br>而今天，只是他们人生中最美好旅程的开始",
       "album.subtext": '一起来看看我们的照片吧！',
  
       "rsvp.subtitle":
-        '请花一点时间帮 Mỹ Uyên 和 Tử Quyền 确认是否出席，谢谢！',
+        '请花一点时间帮 Tử Quyền 和 Mỹ Uyên 确认是否出席，谢谢！',
       "rsvp.namePlaceholder": '您的姓名',
       "rsvp.phonePlaceholder": '手机号码',
       "rsvp.confirmRelatedSubtitle": '您是以下哪位的新朋好友或家人？',

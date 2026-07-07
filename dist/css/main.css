@@ -718,7 +718,7 @@ section {
 }
 .love-story .content {
   width: 100%;
-  padding: 15% 6%;
+  padding: 15% 10%;
 }
 .love-story .content .title {
   font-size: 27px;
@@ -729,6 +729,7 @@ section {
 }
 .love-story .content .story {
   letter-spacing: 1px;
+  line-height: 1.5;
 }
 @media (max-width: 525px) {
   .love-story .content .title {
