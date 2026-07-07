@@ -5,6 +5,7 @@
        HELPERS
     ====================================================== */
   const qs = (selector, parent = document) => parent.querySelector(selector);
+  var SUPPORTED_LANGS = ["vi", "zh"];
 
   const qsa = (selector, parent = document) =>
     parent.querySelectorAll(selector);
@@ -512,6 +513,15 @@
     }
   }
 
+  function getLangFromURL() {
+    var params = new URLSearchParams(window.location.search);
+    var lang = params.get("lang");
+    return isSupported(lang) ? lang : null;
+  }
+  function isSupported(lang) {
+    return SUPPORTED_LANGS.indexOf(lang) !== -1;
+  }
+
   /* ======================================================
        RSVP
     ====================================================== */
@@ -519,6 +529,8 @@
   async function handleFormSubmit(e, lang = "vi") {
     e.preventDefault();
     const form = document.forms["rsvpForm"];
+    var urlLang = getLangFromURL();
+    lang = urlLang
 
     // form.addEventListener("submit", (e) => {
     //   e.preventDefault();
@@ -537,8 +549,10 @@
     const {
       name,
       confirm,
-      guest_number,
-      guests_names,
+      phone,
+      guests_number,
+      confirm_related,
+      related,
       wish,
     } = data;
 
@@ -556,15 +570,14 @@
         errorServer: "OPPS! Không tìm thấy server",
         errorRetry: "Thử lại",
       },
-      en: {
-        sendingTitle: "Sending...",
-        sendingText: "Please wait a moment",
-        successTitle: "Success!",
-        successText:
-          "Thank you for your confirmation. Your information has been forwarded to the bride and groom.",
-        errorTitle: "Error!",
-        errorServer: "OPPS! Server not found",
-        errorRetry: "Try again",
+      zh: {
+        sendingTitle: "正在提交...",
+        sendingText: "请稍候",
+        successTitle: "提交成功！",
+        successText: "感谢您的回复。您的确认信息已成功发送给新郎和新娘。",
+        errorTitle: "发生错误！",
+        errorServer: "哎呀！无法连接到服务器。",
+        errorRetry: "重试",
       },
     };
 
@@ -581,7 +594,7 @@
       didOpen: () => Swal.showLoading(),
     });
 
-    const sheetURL = "/exec?sheet=confirm";
+    const sheetURL = "https://script.google.com/macros/s/AKfycbxSnE3OG10zFSnYrlSt6bd0CBa16rwHn0iUDQ1TEyzD7okRuG6zGyocMJS_DgaXAj8f/exec/exec?sheet=confirm";
 
     try {
       const res = await fetch(sheetURL, {
@@ -590,8 +603,10 @@
         body: new URLSearchParams({
           name,
           confirm,
-          guest_number,
-          guests_names,
+          phone,
+          guests_number,
+          confirm_related,
+          related,
           wish,
         }),
       });
