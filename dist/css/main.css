@@ -297,7 +297,7 @@ section {
     .invitation .content .message .text {
       font-family: "SVG-gotham-book", sans-serif;
       line-height: 1.5;
-      font-size: 11px;
+      font-size: 13px;
       line-height: 2;
       margin-bottom: 2%; }
       .invitation .content .message .text span {
@@ -365,7 +365,7 @@ section {
       .invitation .content .section-header {
         font-size: calc((52 / 525) * 100vw); }
       .invitation .content .message .text {
-        font-size: calc((11 / 525) * 100vw); }
+        font-size: calc((13 / 525) * 100vw); }
       .invitation .content .message .couple-name {
         font-size: calc((28 / 525) * 100vw); }
       .invitation .content .divider-icon img {
@@ -617,7 +617,7 @@ section {
           font-family: "Lora", sans-serif;
           font-size: 22px; }
       .rsvp .content .rsvp-form .header .subtitle {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1.5;
         margin-bottom: 10%;
         font-family: "SVG-GothamLight", sans-serif;
@@ -752,7 +752,7 @@ section {
       .rsvp .content .rsvp-form .header .title i {
         font-size: calc((22 / 525) * 100vw); }
     .rsvp .content .rsvp-form .header .subtitle {
-      font-size: calc((12 / 525) * 100vw); }
+      font-size: calc((14 / 525) * 100vw); }
     .rsvp .content .rsvp-form .form-group {
       font-size: calc((10 / 525) * 100vw); }
       .rsvp .content .rsvp-form .form-group input[type="text"],

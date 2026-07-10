@@ -14,7 +14,7 @@
   var translations = {
     vi: {
       "invitation.message":
-        'TRÂN TRỌNG KÍNH MỜI QUÝ KHÁCH DÀNH THỜI GIAN<br /> ĐẾN THAM DỰ LỄ THÀNH HÔN CỦA',
+        'TRÂN TRỌNG KÍNH MỜI QUÝ KHÁCH DÀNH THỜI GIAN<br /> ĐẾN THAM DỰ <strong>LỄ THÀNH HÔN</strong> CỦA',
       "invitation.groom_name": 'Mỹ Uyên',
       "invitation.bride_name": 'Tử Quyền',
       "invitation.timeLabel": 'VÀO LÚC <strong>18H00</strong>',
@@ -37,7 +37,7 @@
 
       "rsvp.title": "Xác nhận tham dự",
       "rsvp.subtitle":
-        'KHÁCH MỜI VUI LÒNG XÁC NHẬN THAM DỰ TRƯỚC NGÀY 01/08.',
+        'KHÁCH MỜI VUI LÒNG <br> XÁC NHẬN THAM DỰ TRƯỚC <strong>NGÀY 01/08</strong>.',
       "rsvp.namePlaceholder": 'Tên khách mời',
       "rsvp.guests_number": 'Số người đi kèm',
       "rsvp.confirmRelatedSubtitle": 'BẠN LÀ BẠN BÈ, ĐỒNG NGHIỆP HAY NGƯỜI THÂN CỦA...?',

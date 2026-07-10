@@ -15,7 +15,7 @@
             .text {
                 font-family: $font-SVG-gotham-book;
                 line-height: 1.5;
-                font-size: 11px;
+                font-size: 13px;
                 line-height: 2;
                 margin-bottom: 2%;
                 span {
@@ -113,7 +113,7 @@
             }
             .message {
                 .text {
-                    font-size: calc((11 / 525) * 100vw);
+                    font-size: calc((13 / 525) * 100vw);
                 }
                 .couple-name {
                     font-size: calc((28 / 525) * 100vw);
