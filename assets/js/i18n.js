@@ -52,7 +52,7 @@
       "rsvp.normal": "Ăn mặn",
       "rsvp.vegetarian": "Ăn chay",
       "rsvp.messageSubtitle": 'GỬI MỘT VÀI LỜI IU THƯƠNG DÀNH CHO CHÚNG MÌNH NHA ^^',
-      "rsvp.messagePlaceholder": 'QUÝ KHÁCH CÓ LỜI CHỨC HAY NHẮN GỬI ĐẾN CÔ DÂU VÀ CHÚ RỂ KHÔNG?',
+      "rsvp.messagePlaceholder": 'QUÝ KHÁCH CÓ LỜI CHÚC HAY NHẮN GỬI ĐẾN CÔ DÂU VÀ CHÚ RỂ KHÔNG?',
       "rsvp.submit": 'Xác nhận',
 
       "yenstudio.textMain": 'HẸN GẶP LẠI BẠN!'
