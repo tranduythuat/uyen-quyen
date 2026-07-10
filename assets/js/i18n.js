@@ -14,7 +14,7 @@
   var translations = {
     vi: {
       "invitation.message":
-        'TRÂN TRỌNG KÍNH MỜI QUÝ KHÁCH<br /> ĐẾN THAM DỰ LỄ THÀNH HÔN CỦA',
+        'TRÂN TRỌNG KÍNH MỜI QUÝ KHÁCH DÀNH THỜI GIAN<br /> ĐẾN THAM DỰ LỄ THÀNH HÔN CỦA',
       "invitation.groom_name": 'Mỹ Uyên',
       "invitation.bride_name": 'Tử Quyền',
       "invitation.timeLabel": 'VÀO LÚC <strong>18H00</strong>',
