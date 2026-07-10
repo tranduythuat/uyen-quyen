@@ -159,7 +159,6 @@
                 }  
                 
                 &.guests-number {
-                    margin: 8% 0;
                     .button-group.first {
                         grid-template-columns: auto;
                         .radio-label {
@@ -179,21 +178,7 @@
                     }
                 }  
 
-                &.guest-number {
-                    display: flex;
-                    gap: 2%;
-                    .label {
-                        font-family: $font-SVG-gotham;
-                        display: flex;
-                        flex-direction: column;
-                        @include flex-center;
-                        width: 35%;
-                        text-transform: uppercase;
-                    }
-                    input {
-                        width: 63%;
-                    }
-                }
+               
             }
 
             .submit-btn {

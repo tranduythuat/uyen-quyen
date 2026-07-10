@@ -717,7 +717,7 @@
     initSwiper();
     // initMusic();
     initDresscodeAnimation();
-    initTimeline();
+    // initTimeline();
     initFAQ();
     initRSVP();
     // startCountdown(new Date("2026-03-06T16:00:00"));
