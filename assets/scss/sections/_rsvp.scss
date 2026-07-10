@@ -14,7 +14,7 @@
             padding: 0 8%;
             .header {
                 .title {
-                    font-size: 27px;
+                    font-size: 29px;
                     font-family: $font-lora;
                     line-height: .8;
                     margin-bottom: 5%;
@@ -26,7 +26,7 @@
                 }
 
                 .subtitle {
-                    font-size: 14px;
+                    font-size: 16px;
                     line-height: 1.5;
                     margin-bottom: 10%;
                     font-family: $font-SVG-GothamLight;
@@ -114,6 +114,7 @@
                     resize: vertical;
                     padding: 2% 4%;
                     border-radius: 15px;
+                    line-height: 1.6;
                 }
 
                 textarea#guest-names {
@@ -126,6 +127,7 @@
 
                 textarea::placeholder {
                     white-space: pre-line;
+                    margin: 5px;
                     /* Cho phép hiển thị xuống dòng trong placeholder */
                 }
 
@@ -213,14 +215,14 @@
             .rsvp-form {
                 .header {
                     .title {
-                        font-size: calc((27 / 525) * 100vw);
+                        font-size: calc((29 / 525) * 100vw);
                         i {
                             font-size: calc((22 / 525) * 100vw);
                         }
                     }
     
                     .subtitle {
-                        font-size: calc((14 / 525) * 100vw);
+                        font-size: calc((16 / 525) * 100vw);
                     }
                 }
     

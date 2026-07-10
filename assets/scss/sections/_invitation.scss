@@ -8,14 +8,14 @@
         .section-header {
             font-family: $font-1FTVVIPAmsterdamSignature;
             font-size: 52px;
-            margin: 10%;
+            margin: 10% 0 5%;
         }
 
         .message {
             .text {
                 font-family: $font-SVG-gotham-book;
                 line-height: 1.5;
-                font-size: 13px;
+                font-size: 15px;
                 line-height: 2;
                 margin-bottom: 2%;
                 span {
@@ -24,7 +24,7 @@
             }
             .couple-name {
                 font-family: $font-lora;
-                font-size: 28px;
+                font-size: 30px;
                 text-transform: uppercase;
                 letter-spacing: 2.5px;
             }
@@ -53,6 +53,7 @@
                 font-family: $font-lora;
                 font-size: 37px;
                 letter-spacing: 2.5px;
+                margin: 2%;
                 .date-divider {
                     position: relative;
                     top: -3px;
@@ -73,6 +74,7 @@
             .venue-address {
                 font-family: $font-SVG-gotham-book;
                 font-size: 11px;
+                margin-top: 2%;
             }
         }
 
@@ -113,10 +115,10 @@
             }
             .message {
                 .text {
-                    font-size: calc((13 / 525) * 100vw);
+                    font-size: calc((15 / 525) * 100vw);
                 }
                 .couple-name {
-                    font-size: calc((28 / 525) * 100vw);
+                    font-size: calc((30 / 525) * 100vw);
                 }
             }
             .divider-icon {

@@ -293,18 +293,18 @@ section {
     .invitation .content .section-header {
       font-family: "1FTVVIPAmsterdamSignature", sans-serif;
       font-size: 52px;
-      margin: 10%; }
+      margin: 10% 0 5%; }
     .invitation .content .message .text {
       font-family: "SVG-gotham-book", sans-serif;
       line-height: 1.5;
-      font-size: 13px;
+      font-size: 15px;
       line-height: 2;
       margin-bottom: 2%; }
       .invitation .content .message .text span {
         font-weight: bold; }
     .invitation .content .message .couple-name {
       font-family: "Lora", sans-serif;
-      font-size: 28px;
+      font-size: 30px;
       text-transform: uppercase;
       letter-spacing: 2.5px; }
     .invitation .content .divider-icon {
@@ -324,7 +324,8 @@ section {
       .invitation .content .event-time .event-date {
         font-family: "Lora", sans-serif;
         font-size: 37px;
-        letter-spacing: 2.5px; }
+        letter-spacing: 2.5px;
+        margin: 2%; }
         .invitation .content .event-time .event-date .date-divider {
           position: relative;
           top: -3px; }
@@ -337,7 +338,8 @@ section {
       text-transform: uppercase; }
     .invitation .content .event-location .venue-address {
       font-family: "SVG-gotham-book", sans-serif;
-      font-size: 11px; }
+      font-size: 11px;
+      margin-top: 2%; }
     .invitation .content .location-map {
       width: 100%;
       margin: 10% 0; }
@@ -365,9 +367,9 @@ section {
       .invitation .content .section-header {
         font-size: calc((52 / 525) * 100vw); }
       .invitation .content .message .text {
-        font-size: calc((13 / 525) * 100vw); }
+        font-size: calc((15 / 525) * 100vw); }
       .invitation .content .message .couple-name {
-        font-size: calc((28 / 525) * 100vw); }
+        font-size: calc((30 / 525) * 100vw); }
       .invitation .content .divider-icon img {
         max-width: calc((82 / 525) * 100vw); }
       .invitation .content .event-time .time-label {
@@ -608,7 +610,7 @@ section {
       display: block;
       padding: 0 8%; }
       .rsvp .content .rsvp-form .header .title {
-        font-size: 27px;
+        font-size: 29px;
         font-family: "Lora", sans-serif;
         line-height: .8;
         margin-bottom: 5%; }
@@ -617,7 +619,7 @@ section {
           font-family: "Lora", sans-serif;
           font-size: 22px; }
       .rsvp .content .rsvp-form .header .subtitle {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.5;
         margin-bottom: 10%;
         font-family: "SVG-GothamLight", sans-serif;
@@ -685,7 +687,8 @@ section {
           aspect-ratio: 8 / 2;
           resize: vertical;
           padding: 2% 4%;
-          border-radius: 15px; }
+          border-radius: 15px;
+          line-height: 1.6; }
         .rsvp .content .rsvp-form .form-group textarea#guest-names {
           aspect-ratio: 9 / 1;
           resize: vertical;
@@ -693,6 +696,7 @@ section {
           border-radius: 15px; }
         .rsvp .content .rsvp-form .form-group textarea::placeholder {
           white-space: pre-line;
+          margin: 5px;
           /* Cho phép hiển thị xuống dòng trong placeholder */ }
         .rsvp .content .rsvp-form .form-group .subtitle {
           font-size: 12px;
@@ -748,11 +752,11 @@ section {
         transform: scale(0.98); }
   @media (max-width: 525px) {
     .rsvp .content .rsvp-form .header .title {
-      font-size: calc((27 / 525) * 100vw); }
+      font-size: calc((29 / 525) * 100vw); }
       .rsvp .content .rsvp-form .header .title i {
         font-size: calc((22 / 525) * 100vw); }
     .rsvp .content .rsvp-form .header .subtitle {
-      font-size: calc((14 / 525) * 100vw); }
+      font-size: calc((16 / 525) * 100vw); }
     .rsvp .content .rsvp-form .form-group {
       font-size: calc((10 / 525) * 100vw); }
       .rsvp .content .rsvp-form .form-group input[type="text"],
